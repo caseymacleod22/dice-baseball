@@ -10,6 +10,7 @@ function rollDice() {
     let result;
     let call;
 
+
     let dice = {
         sides: 6,
         roll: function () {
@@ -69,7 +70,16 @@ function rollDice() {
         totalOuts++
     }
     console.log(result)
-    console.log(outs)
+    console.log(`There are ${outs} outs`)
+    console.log(`It is the ${inning} inning`)
+    console.log(totalOuts)
+
+
+    if (totalOuts === 6 || totalOuts === 12 || totalOuts === 18 || totalOuts === 24 || totalOuts === 30 ||
+        totalOuts === 36 || totalOuts === 42 || totalOuts === 48 || totalOuts === 54) {
+            inning++
+        }
+
     getHitResult()
 }
 
