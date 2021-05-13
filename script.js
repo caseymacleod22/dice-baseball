@@ -4,7 +4,7 @@ let totalOuts = 0
 
 // Dice roll function
 
-rollDice()
+// rollDice()
 
 function rollDice() {
     let result;
@@ -39,8 +39,10 @@ function rollDice() {
             getSinglePBP()
         } else if (hitResult ===  3) {
             hitResult = 'Double'
+            getDoublePBP()
         } else if (hitResult === 4) {
             hitResult ='Double'
+            getDoublePBP()
         } else if (hitResult === 5) {
             hitResult = 'Triple'
         } else if (hitResult === 6) {
@@ -72,17 +74,12 @@ function rollDice() {
         totalOuts++
     }
     console.log(result)
-    console.log(`There are ${outs} outs`)
-    console.log(`It is the ${inning} inning`)
-    console.log(totalOuts)
 
 
     if (totalOuts === 6 || totalOuts === 12 || totalOuts === 18 || totalOuts === 24 || totalOuts === 30 ||
         totalOuts === 36 || totalOuts === 42 || totalOuts === 48 || totalOuts === 54) {
             inning++
         }
-
-    getHitResult()
 
 
         function getSinglePBP() {
@@ -94,7 +91,7 @@ function rollDice() {
                     "A bullet back up the middle for a single!",
                     "A little flare over first base... that's gonna fall in for a single!",
                     "Dribbler down the third base line, it will stat fair for an infield single.",
-                    "And that ball is hammered down the right field line! Played beautifully by the right fielder to   hold him to a single",
+                    "And that ball is hammered down the right field line! Played beautifully by the right fielder to hold him to a single",
                     "Ground ball up the middle, diving stop by the shortstop, but the runner beats it out for an infield single",
                     "Weak groundball towards third but the shift is on and no one is there! That's gonna be a single.",
                     "Broken bat pop up and that will drop over the second base bag for a single."
@@ -106,7 +103,36 @@ function rollDice() {
             call = singlePBP
             console.log(singlePBP)
         }
+
+        function getDoublePBP() {
+
+            // Play by play data
+        
+            var PBP = {
+        
+              "double": [
+                "Ripped down the left field line! He'll cruise into second with a double.",
+                "Line drive over the shortstop's head, it'll split the outfielders and go to the wall!",
+                "Sinking line drive, the center fielder dives but can't get there, allowing the runner to head to second for a double.",
+                "Fair ball down the line! That's gonna be extra bases.",
+                "Hit high and deep to right center... off the wall! A long double!",
+                "Hit hard into the right center field gap, that's gonna fall and bounce over the wall for a ground rule double.",
+                "Grounded past the diving third baseman! It rolls into the corner as the batter reaches second with a double!"
+              ]
+        
+            };
+        
+            var doublePBP = PBP.double
+            var randNum = Math.floor(Math.random() * doublePBP.length)
+            doublePBP = PBP.double[randNum]
+            call = doublePBP
+            console.log(doublePBP)
+        
+          }
+
 }
+
+rollDice()
 
 
 
