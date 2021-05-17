@@ -239,26 +239,26 @@ function rollDice() {
             console.log(lineoutPBP)
         }
 
-        // function getStrikeoutPBP() {
-        //     let PBP = {
-        //         "strikeout": [
-        //             "Swing and a miss on a high fastball! Strike three!",
-        //             "The 3-2 pitch is called strike three! He painted the corner with a beautiful two seamer.",
-        //             "Nasty slider down and away gets the batter to chase for strike three!",
-        //             "Swung on and missed for strike three! He blew a fastball right by him!",
-        //             "The pitch is called strike three at the knees! The batter didn't like that one and he lets the umpire know on his way abck to the dugout.",
-        //             "Foul tipped but the catcher is able to squeeze it for strike three.",
-        //             "He buckles his knees with a nasty 2-2 curveball to put him away looking!",
-        //             "Swing and a miss for strike three! He had him way out in front with the changeup."
-        //         ]
-        //     }
+        function getStrikeoutPBP() {
+            let PBP = {
+                "strikeout": [
+                    "Swing and a miss on a high fastball! Strike three!",
+                    "The 3-2 pitch is called strike three! He painted the corner with a beautiful two seamer.",
+                    "Nasty slider down and away gets the batter to chase for strike three!",
+                    "Swung on and missed for strike three! He blew a fastball right by him!",
+                    "The pitch is called strike three at the knees! The batter didn't like that one and he lets the umpire know on his way abck to the dugout.",
+                    "Foul tipped but the catcher is able to squeeze it for strike three.",
+                    "He buckles his knees with a nasty 2-2 curveball to put him away looking!",
+                    "Swing and a miss for strike three! He had him way out in front with the changeup."
+                ]
+            }
 
-        //     let strikeoutPBP = PBP.strikeout
-        //     let randomNum = Math.floor(Math.random() * strikeoutPBP.length)
-        //     strikeoutPBP = PBP.strikeout[randomNum] 
-        //     call = strikeoutPBP
-        //     console.log(strikeoutPBP)
-        // }
+            let strikeoutPBP = PBP.strikeout
+            let randomNum = Math.floor(Math.random() * strikeoutPBP.length)
+            strikeoutPBP = PBP.strikeout[randomNum] 
+            call = strikeoutPBP
+            console.log(strikeoutPBP)
+        }
 
 }
 
