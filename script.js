@@ -60,18 +60,22 @@ function rollDice() {
         getHitResult()
     } else if (result === 3) {
         result = 'Groundout'
+        getGroundoutPBP()
         outs++
         totalOuts++
     } else if (result === 4) {
         result = 'Flyout'
+        getFlyoutPBP()
         outs++
         totalOuts++
     } else if (result === 5) {
         result = 'Lineout'
+        getLineoutPBP()
         outs++
         totalOuts++
     } else if (result === 6) {
         result = 'Strikeout'
+        getStrikeoutPBP()
         outs++
         totalOuts++
     }
@@ -167,6 +171,94 @@ function rollDice() {
             call = homerunPBP
             console.log(homerunPBP)
         }
+
+        function getGroundoutPBP() {
+            let PBP = {
+                "groundout": [
+                    "Grounded to the shortstop, he fields and fires to first for the out.",
+                    "Slow dribbler down the third base line, the third baseman fields it barehanded and makes the throw to just get him by a step.",
+                    "Tapped softly back to the pitcher, he flips it to first for the out.",
+                    "Chopped to the second baseman for an easy out.",
+                    "Ripped down the line but it's back handed beautifully by the first baseman and he takes it himself for the out",
+                    "Grounded hard up the middle... diving stop by the shortstop! He fires to first for the out, what a play",
+                    "Tapped right in front of the plate, the catcher pops up to grab it and throws to first for the out.",
+                    "Hit sharply but rifht at the third baseman. He takes his time and makes an accurate throw to first.",
+                    "High chopper over the pitcher's head, the second baseman ranges over and makes a nice backhand grab, he sets and fires a rocket to first!",
+                    "Hit hard in the hole but the third baseman makes a great sliding grab! He gets himself to his feet and makes a perfect throw!"
+                ]
+            }
+
+            let groundoutPBP = PBP.groundout
+            let randomNum = Math.floor(Math.random() * groundoutPBP.length)
+            groundoutPBP = PBP.groundout[randomNum]
+            call = groundoutPBP
+            console.log(groundoutPBP)
+        }
+
+        // function getFlyoutPBP() {
+        //     let PBP = {
+        //         "flyout": [
+        //             "High fly ball the straight away center field. The center fielder barely has to move to put it away.",
+        //             "Hit high and deep to left center, the left fielder tracks it to the wall and leaps... and he makes the play! He pulled that back from over the wall and took a homerun away!.",
+        //             "Lofted into right field, the right fielder runs in and makes the out.",
+        //             "Popped high in the infield, the shortstop calls everyone off and records the out.",
+        //             "Shallow fly ball into left field, the left fielder sprints in and dives to make the play!",
+        //             "Broken bat jam shot oevr the first base bag, and the first baseman makes a beautiful over the shoulder catch!",
+        //             "Routine fly ball down the right field line, the right fielder jogs over to make the play.",
+        //             "Deep fly ball to center... not quite deep enough as the center fielder settles under it for the out.",
+        //             "Fly ball to left center field, the center fielder sprints over and dives to make the play! What a catch!",
+        //             "Fly ball to right, the right fielder settles under it at the warning track to put it away, the batter just missed that one."
+        //         ]
+        //     }
+
+        //     let flyoutPBP = PBP.flyout
+        //     let randomNum = Math.floor(Math.random() * flyoutPBP.length)
+        //     flyoutPBP = PBP.flyout[randomNum]
+        //     call = flyoutPBP
+        //     console.log(flyoutPBP)
+        // }
+
+        // function getLineoutPBP() {
+        //     let PBP = {
+        //         "lineout": [
+        //             "He hits a bullet, but it's right at the third baseman.",
+        //             "Line drive towards left center, the center fielder got a good jump and was able to run it down for the out.",
+        //             "Line drive right back to the pitcher! He got his glove up just in time!",
+        //             "Hard hit line drive but the second baseman is right there to record the out.",
+        //             "Lined right to the left fielder, who doesn't have to move an inch to make the play.",
+        //             "Lined down the right field line, but the right fielder was playing towards the line and is able to track it down!",
+        //             "Lined... and a diving catch by the first baseman! Oh what a play!",
+        //             "A bullet hit in the hole but there's a diving catch by the third baseman!"
+        //         ]
+        //     }
+
+        //     let lineoutPBP = PBP.lineout
+        //     let randomNum = Math.floor(Math.random() * lineoutPBP.length)
+        //     lineoutPBP = PBP.lineout[randomNum]
+        //     call = lineoutPBP
+        //     console.log(lineoutPBP)
+        // }
+
+        // function getStrikeoutPBP() {
+        //     let PBP = {
+        //         "strikeout": [
+        //             "Swing and a miss on a high fastball! Strike three!",
+        //             "The 3-2 pitch is called strike three! He painted the corner with a beautiful two seamer.",
+        //             "Nasty slider down and away gets the batter to chase for strike three!",
+        //             "Swung on and missed for strike three! He blew a fastball right by him!",
+        //             "The pitch is called strike three at the knees! The batter didn't like that one and he lets the umpire know on his way abck to the dugout.",
+        //             "Foul tipped but the catcher is able to squeeze it for strike three.",
+        //             "He buckles his knees with a nasty 2-2 curveball to put him away looking!",
+        //             "Swing and a miss for strike three! He had him way out in front with the changeup."
+        //         ]
+        //     }
+
+        //     let strikeoutPBP = PBP.strikeout
+        //     let randomNum = Math.floor(Math.random() * strikeoutPBP.length)
+        //     strikeoutPBP = PBP.strikeout[randomNum] 
+        //     call = strikeoutPBP
+        //     console.log(strikeoutPBP)
+        // }
 
 }
 
