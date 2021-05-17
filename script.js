@@ -195,28 +195,28 @@ function rollDice() {
             console.log(groundoutPBP)
         }
 
-        // function getFlyoutPBP() {
-        //     let PBP = {
-        //         "flyout": [
-        //             "High fly ball the straight away center field. The center fielder barely has to move to put it away.",
-        //             "Hit high and deep to left center, the left fielder tracks it to the wall and leaps... and he makes the play! He pulled that back from over the wall and took a homerun away!.",
-        //             "Lofted into right field, the right fielder runs in and makes the out.",
-        //             "Popped high in the infield, the shortstop calls everyone off and records the out.",
-        //             "Shallow fly ball into left field, the left fielder sprints in and dives to make the play!",
-        //             "Broken bat jam shot oevr the first base bag, and the first baseman makes a beautiful over the shoulder catch!",
-        //             "Routine fly ball down the right field line, the right fielder jogs over to make the play.",
-        //             "Deep fly ball to center... not quite deep enough as the center fielder settles under it for the out.",
-        //             "Fly ball to left center field, the center fielder sprints over and dives to make the play! What a catch!",
-        //             "Fly ball to right, the right fielder settles under it at the warning track to put it away, the batter just missed that one."
-        //         ]
-        //     }
+        function getFlyoutPBP() {
+            let PBP = {
+                "flyout": [
+                    "High fly ball the straight away center field. The center fielder barely has to move to put it away.",
+                    "Hit high and deep to left center, the left fielder tracks it to the wall and leaps... and he makes the play! He pulled that back from over the wall and took a homerun away!.",
+                    "Lofted into right field, the right fielder runs in and makes the out.",
+                    "Popped high in the infield, the shortstop calls everyone off and records the out.",
+                    "Shallow fly ball into left field, the left fielder sprints in and dives to make the play!",
+                    "Broken bat jam shot oevr the first base bag, and the first baseman makes a beautiful over the shoulder catch!",
+                    "Routine fly ball down the right field line, the right fielder jogs over to make the play.",
+                    "Deep fly ball to center... not quite deep enough as the center fielder settles under it for the out.",
+                    "Fly ball to left center field, the center fielder sprints over and dives to make the play! What a catch!",
+                    "Fly ball to right, the right fielder settles under it at the warning track to put it away, the batter just missed that one."
+                ]
+            }
 
-        //     let flyoutPBP = PBP.flyout
-        //     let randomNum = Math.floor(Math.random() * flyoutPBP.length)
-        //     flyoutPBP = PBP.flyout[randomNum]
-        //     call = flyoutPBP
-        //     console.log(flyoutPBP)
-        // }
+            let flyoutPBP = PBP.flyout
+            let randomNum = Math.floor(Math.random() * flyoutPBP.length)
+            flyoutPBP = PBP.flyout[randomNum]
+            call = flyoutPBP
+            console.log(flyoutPBP)
+        }
 
         // function getLineoutPBP() {
         //     let PBP = {
