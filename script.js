@@ -218,26 +218,26 @@ function rollDice() {
             console.log(flyoutPBP)
         }
 
-        // function getLineoutPBP() {
-        //     let PBP = {
-        //         "lineout": [
-        //             "He hits a bullet, but it's right at the third baseman.",
-        //             "Line drive towards left center, the center fielder got a good jump and was able to run it down for the out.",
-        //             "Line drive right back to the pitcher! He got his glove up just in time!",
-        //             "Hard hit line drive but the second baseman is right there to record the out.",
-        //             "Lined right to the left fielder, who doesn't have to move an inch to make the play.",
-        //             "Lined down the right field line, but the right fielder was playing towards the line and is able to track it down!",
-        //             "Lined... and a diving catch by the first baseman! Oh what a play!",
-        //             "A bullet hit in the hole but there's a diving catch by the third baseman!"
-        //         ]
-        //     }
+        function getLineoutPBP() {
+            let PBP = {
+                "lineout": [
+                    "He hits a bullet, but it's right at the third baseman.",
+                    "Line drive towards left center, the center fielder got a good jump and was able to run it down for the out.",
+                    "Line drive right back to the pitcher! He got his glove up just in time!",
+                    "Hard hit line drive but the second baseman is right there to record the out.",
+                    "Lined right to the left fielder, who doesn't have to move an inch to make the play.",
+                    "Lined down the right field line, but the right fielder was playing towards the line and is able to track it down!",
+                    "Lined... and a diving catch by the first baseman! Oh what a play!",
+                    "A bullet hit in the hole but there's a diving catch by the third baseman!"
+                ]
+            }
 
-        //     let lineoutPBP = PBP.lineout
-        //     let randomNum = Math.floor(Math.random() * lineoutPBP.length)
-        //     lineoutPBP = PBP.lineout[randomNum]
-        //     call = lineoutPBP
-        //     console.log(lineoutPBP)
-        // }
+            let lineoutPBP = PBP.lineout
+            let randomNum = Math.floor(Math.random() * lineoutPBP.length)
+            lineoutPBP = PBP.lineout[randomNum]
+            call = lineoutPBP
+            console.log(lineoutPBP)
+        }
 
         // function getStrikeoutPBP() {
         //     let PBP = {
