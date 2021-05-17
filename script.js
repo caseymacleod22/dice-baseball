@@ -170,7 +170,7 @@ function rollDice() {
 
 }
 
-// rollDice()
+rollDice()
 
 
 
