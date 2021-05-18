@@ -81,8 +81,6 @@ function rollDice() {
     console.log(result)
 
 
-    $('.pbp').html('').hide().html(call).fadeIn(500); 
-
     if (totalOuts === 6 || totalOuts === 12 || totalOuts === 18 || totalOuts === 24 || totalOuts === 30 ||
         totalOuts === 36 || totalOuts === 42 || totalOuts === 48 || totalOuts === 54) {
             inning++
@@ -261,6 +259,7 @@ function rollDice() {
             console.log(call)
         }
 
+        $('#pbp').html(call)
 }
 
 // rollDice()
