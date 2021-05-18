@@ -4,7 +4,7 @@ let totalOuts = 0
 
 // Dice roll function
 
-// rollDice()
+$('.roll button').on('click', rollDice())
 
 function rollDice() {
     let result;
@@ -82,6 +82,9 @@ function rollDice() {
     console.log(result)
 
 
+    $('.playresult').html('').hide().html(call).fadeIn(500); 
+
+
     if (totalOuts === 6 || totalOuts === 12 || totalOuts === 18 || totalOuts === 24 || totalOuts === 30 ||
         totalOuts === 36 || totalOuts === 42 || totalOuts === 48 || totalOuts === 54) {
             inning++
@@ -107,7 +110,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * singlePBP.length)
             singlePBP = PBP.single[randomNum]
             call = singlePBP
-            console.log(singlePBP)
+            console.log(call)
         }
 
         function getDoublePBP() {
@@ -132,7 +135,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * doublePBP.length)
             doublePBP = PBP.double[randomNum]
             call = doublePBP
-            console.log(doublePBP)
+            console.log(call)
         }
         
         function getTriplePBP() {
@@ -149,7 +152,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * triplePBP.length)
             triplePBP = PBP.triple[randomNum]
             call = triplePBP
-            console.log(triplePBP)
+            console.log(call)
 
         }
 
@@ -169,7 +172,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * homerunPBP.length)
             homerunPBP = PBP.homerun[randomNum]
             call = homerunPBP
-            console.log(homerunPBP)
+            console.log(call)
         }
 
         function getGroundoutPBP() {
@@ -192,7 +195,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * groundoutPBP.length)
             groundoutPBP = PBP.groundout[randomNum]
             call = groundoutPBP
-            console.log(groundoutPBP)
+            console.log(call)
         }
 
         function getFlyoutPBP() {
@@ -215,7 +218,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * flyoutPBP.length)
             flyoutPBP = PBP.flyout[randomNum]
             call = flyoutPBP
-            console.log(flyoutPBP)
+            console.log(call)
         }
 
         function getLineoutPBP() {
@@ -236,7 +239,7 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * lineoutPBP.length)
             lineoutPBP = PBP.lineout[randomNum]
             call = lineoutPBP
-            console.log(lineoutPBP)
+            console.log(call)
         }
 
         function getStrikeoutPBP() {
@@ -257,12 +260,12 @@ function rollDice() {
             let randomNum = Math.floor(Math.random() * strikeoutPBP.length)
             strikeoutPBP = PBP.strikeout[randomNum] 
             call = strikeoutPBP
-            console.log(strikeoutPBP)
+            console.log(call)
         }
 
 }
 
-rollDice()
+// rollDice()
 
 
 
