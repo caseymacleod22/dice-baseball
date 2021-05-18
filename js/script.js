@@ -4,7 +4,6 @@ let totalOuts = 0
 
 // Dice roll function
 
-$('.roll button').on('click', rollDice())
 
 function rollDice() {
     let result;
@@ -82,8 +81,7 @@ function rollDice() {
     console.log(result)
 
 
-    $('.playresult').html('').hide().html(call).fadeIn(500); 
-
+    $('.pbp').html('').hide().html(call).fadeIn(500); 
 
     if (totalOuts === 6 || totalOuts === 12 || totalOuts === 18 || totalOuts === 24 || totalOuts === 30 ||
         totalOuts === 36 || totalOuts === 42 || totalOuts === 48 || totalOuts === 54) {
