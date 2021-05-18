@@ -259,7 +259,8 @@ function rollDice() {
             console.log(call)
         }
 
-        $('#pbp').html(call)
+        $('#pbp').html(call).fadeIn(500)
+        $('#playresult').html(result)
 }
 
 // rollDice()
