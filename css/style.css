@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#gameboard {
+    background-color: rgb(208, 151, 112);
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    width: 50%;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    margin: 3rem;
+}
+
+#pbp {
+    font-family: 'Orbitron', sans-serif;
+    color: lightgoldenrodyellow
+}
+
+#playresult {
+    font-family: 'Orbitron', sans-serif;
+    color: lightgoldenrodyellow
+}
+
