@@ -155,12 +155,12 @@ function rollDice() {
         function getHomerunPBP() {
             let PBP = {
                 "homerun": [
-                    "Swung on and drilled to deep left! There it goes, see ya!",
+                    "That ball is drilled to deep left! There it goes, see ya!",
                     "And this ball is clobbered to straight away center, the center fielder turns just to give it a look, it's gone!",
                     "Line drive down the right field line does it have the height... it does! it scrapes over the wall for a homer!",
                     "A high fly ball to left, the left fielder gets to the wall and leaps, but it's just over his glove for a home run!",
                     "Drilled down the right field line, if it's fair it's gone and it is... a fair ball!",
-                    "There it goes to deep left! It is high, it is far it is GONE!"
+                    "Swung on and there it goes to deep left! It is high, it is far it is GONE!"
                 ]
             }
 
