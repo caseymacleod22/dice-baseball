@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+body {
+    background-image: url('https://media.istockphoto.com/photos/bermuda-grass-picture-id505537408?k=6&m=505537408&s=612x612&w=0&h=KxC9scLqru5EXKD0yhHX2pJkvyzaBVIyqGEMEgjfoQU=');
+    background-size: cover;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -13,6 +18,7 @@
     flex-direction: column;
     height: 25rem;
     width: 50%;
+    justify-content: center;
     align-items: center;
     border-radius: 15%;
     border-top-right-radius: 60%;
@@ -39,3 +45,7 @@ button {
     align-items: center;
 }
 
+.outs, .inning {
+    color: lightgoldenrodyellow;
+    font-family: 'Orbitron', sans-serif;
+}

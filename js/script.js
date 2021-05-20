@@ -261,6 +261,10 @@ function rollDice() {
 
         $('#pbp').html(call).fadeIn(500)
         $('#playresult').html(result)
+        // $('#outsnum').html(outs)
+        // $('#inningnum').html(inning)
+        // console.log(outs)
+        // console.log(totalOuts)
 }
 
 // rollDice()
