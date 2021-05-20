@@ -179,7 +179,7 @@ function rollDice() {
                     "Tapped softly back to the pitcher, he flips it to first for the out.",
                     "Chopped to the second baseman for an easy out.",
                     "Ripped down the line but it's back handed beautifully by the first baseman and he takes it himself for the out",
-                    "Grounded hard up the middle... diving stop by the shortstop! He fires to first for the out, what a play",
+                    "Grounded hard up the middle... diving stop by the shortstop! He fires to first for the out, what a play!",
                     "Tapped right in front of the plate, the catcher pops up to grab it and throws to first for the out.",
                     "Hit sharply but rifht at the third baseman. He takes his time and makes an accurate throw to first.",
                     "High chopper over the pitcher's head, the second baseman ranges over and makes a nice backhand grab, he sets and fires a rocket to first!",
