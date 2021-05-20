@@ -261,10 +261,16 @@ function rollDice() {
 
         $('#pbp').html(call).fadeIn(500)
         $('#playresult').html(result)
+            if (outs === 3) {
+                outs = 0
+                if ($('#half-inning').text() === 'Top') {
+                    $('#half-inning').text('Bottom')
+                } else {
+                    $('#half-inning').text('Top')
+                }
+            }
         $('#outsnum').html(outs)
         $('#inningnum').html(inning)
-        console.log(outs)
-        console.log(totalOuts)
 }
 
 // rollDice()
