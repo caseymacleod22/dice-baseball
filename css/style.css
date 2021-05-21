@@ -67,7 +67,6 @@ button {
 
 @media (max-device-width : 480px) {
     #gameboard {
-        height: 50rem;
         width: 100%;
     }
 
