@@ -64,3 +64,15 @@ button {
     text-align: center;
     color: lightgoldenrodyellow;
 }
+
+@media (max-device-width : 480px) {
+    #gameboard {
+        height: 50rem;
+        width: 100%;
+    }
+
+    #pbp {
+        font-size: x-small;
+    }
+}
+
