@@ -54,3 +54,13 @@ button {
     color: lightgoldenrodyellow;
     font-family: 'Orbitron', sans-serif;
 }
+
+.aboutsection {
+    margin-left: 37%;
+    width: 25%;
+}
+
+.about {
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
