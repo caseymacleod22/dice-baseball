@@ -259,8 +259,8 @@ function rollDice() {
             console.log(call)
         }
 
-        $('#pbp').html(call).fadeIn(500)
-        $('#playresult').html(result)
+        $('#pbp').html('').hide().html(call).fadeIn(600)
+        $('#playresult').html('').hide().delay(2000).html(result).fadeIn(400)
             if (outs === 3) {
                 outs = 0
                 if ($('#half-inning').text() === 'Top') {
