@@ -22,3 +22,6 @@ After rolling the dice
 - Keep track of baserunners
 - Keep track of the score
 - Allow users to add a lineup, and track the results for each player.
+
+## ⚾️ Play Ball!
+[Click here to play!](https://dicebaseball.netlify.app/)
